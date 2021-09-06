@@ -1,0 +1,109 @@
+.hero {
+    padding: 29px 0;
+    background-image: url('../img/bg-hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.hero__title-color {
+    color: #28D2E9;
+}
+
+.hero__description {
+    max-width: 188px;
+    // margin: 0 auto;
+}
+
+.hero__desc {
+    margin-top: 12px;
+    // max-width: 188px;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.hero__btn {
+    margin-top: 289px;
+    width: 225px;
+    height: 63px;
+    background: linear-gradient(180deg, #28D2E9 0%, #15A6BA 100%);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 43px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        padding: 54px 0;
+        background-image: url('../img/bg-hero-tab.png');
+        // background-size: cover;
+    }
+
+    .hero__description {
+        max-width: none;
+    }
+
+    .hero__wrapper-title {
+        max-width: 609px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .hero {
+        padding: 38px 0 96px !important;
+        background-image: url('../img/bg-hero-desc.png') !important;
+        background-size: 100% 125%;
+    }
+
+    .hero__wrapper {
+        align-items: flex-start;
+    }
+
+    .hero__wrapper-title {
+        max-width: 400px !important;
+    }
+
+    .hero__title {
+        text-align: left;
+        font-size: 64px;
+        line-height: 78px;
+    }
+
+    .hero__description {
+        margin-top: 33px;
+    }
+
+    .hero__desc {
+        margin: 0;
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .hero__btn {
+        margin-top: 40px;
+    }
+}

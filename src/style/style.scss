@@ -1,0 +1,132 @@
+@import '../fonts/DINPro/stylesheet.css';
+@import './normalize.css';
+@import './header.scss';
+@import './hero.scss';
+@import './services.scss';
+@import './wwd.scss';
+@import './objects.scss';
+@import './why-we.scss';
+@import './footer.scss';
+@import './swiper.scss';
+@import './stages.scss';
+@import './clients.scss';
+
+@import './normalize.css';
+
+
+body {
+    font-family: 'DIN Pro', Helvetica, sans-serif;
+    box-sizing: border-box;
+    // background-color: #385A87;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+address {
+    font-style: normal;
+}
+
+h2 {
+    margin: 0;
+}
+
+.container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.address-tel {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: #FFFFFF;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 17px;
+        height: 17px;
+        background-image: url('../img/phone.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 5px;
+        left: -25px;
+    }
+}
+
+.address-mail {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    height: 63px;
+    background: linear-gradient(180deg, #28D2E9 0%, #15A6BA 100%);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 43px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.section-title {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #385A87;
+}
+
+.title-line {
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 130px;
+        width: 100%;
+        height: 7px;
+       background: #28D2E9;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        max-width: 1920px !important;
+        padding: 0 375px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 1024px;
+        padding: 0 45px;
+    }
+}

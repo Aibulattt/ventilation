@@ -1,0 +1,42 @@
+.what-we-do {
+    padding: 46px 0;
+    background: #fff;
+}
+
+.wwd__desc {
+    text-indent: 30px;
+}
+
+.wwd-text {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 17px;
+    color: #6F6C6C;
+}
+
+.wwd__list-desc {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .wwd-text {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    .what-we-do {
+        padding: 60px 0;
+    }
+
+    .wwd-text {
+        font-size: 21px;
+        line-height: 28px;
+    }
+
+    .wwd__list-desc {
+        margin: 15px 0;
+    }
+}

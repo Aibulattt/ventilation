@@ -1,0 +1,102 @@
+// .swiper {
+//     width: 600px;
+//     height: 300px;
+// }
+
+.swiper-button-next, .swiper-button-prev {
+    align-items: flex-end !important;
+    width: 26px;
+    height: 14px;
+    bottom: 4px !important;
+    top: unset !important;
+    position: absolute !important;
+
+    &::after {
+        display: block;
+        width: 26px;
+        height: 14px;
+        content: '' !important;
+        font-family: unset !important;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}   
+
+.swiper-button-prev {
+    left: 20px !important;
+    &::after {
+        background-image: url('../img/arrow.svg');
+    }
+}
+
+.swiper-button-next {
+    // bottom: 14px;
+    left: auto !important;
+    &::after {
+        background-image: url('../img/arrow.svg');
+        transform: rotate(180deg);
+    }
+}
+
+.swiper-pagination {
+    position: unset !important;
+    margin-top: 58px;
+}
+
+.swiper-pagination-bullet {
+    width: 15px !important;
+    height: 15px !important;
+    background: #C4C4C4 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #545454 !important;
+}
+
+.swiper-clients {
+    padding-bottom: 90px;
+}
+
+.pagination-clients {
+    text-align: left;
+    position: absolute !important;
+    bottom: 0px !important;
+    left: 50px !important;
+}
+
+@media (min-width: 768px) {
+    .swiper-prev-why-we, .swiper-next-why-we {
+        display: none;
+    }
+}
+
+@media (min-width: 1025px) {
+    .swiper-clients {
+        padding-bottom: 90px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 28px !important;
+        height: 28px !important;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        bottom: 10px !important;
+        width: 39px !important;
+    }
+
+    .swiper-button-prev {
+        left: 13px !important;
+    }
+    
+    .pagination-clients {
+        text-align: left;
+        position: absolute !important;
+        bottom: 0px !important;
+        left: 50px !important;
+    }
+
+    .swiper-button-next {
+        left: 530px !important;
+    }
+}
