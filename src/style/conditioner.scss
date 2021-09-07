@@ -1,0 +1,15 @@
+.hero-conditioner {
+    padding: 29px 0;
+    background-image: url('../img/bg-hero-cond.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+@media (min-width: 1025px) {
+    .hero-conditioner {
+        background-image: url('../img/bg-hero-cond-desc.png');
+    }
+}

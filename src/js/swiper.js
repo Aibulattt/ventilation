@@ -1,23 +1,22 @@
-import Swiper from 'swiper'
-import SwiperCore, { Pagination, Navigation } from 'swiper/core';
-// import 'swiper/swiper-bundle.css'
+import Swiper, {Pagination, Navigation} from 'swiper'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 const Swiperr = () => {
-    SwiperCore.use([Navigation, Pagination]);
+    Swiper.use([Navigation, Pagination]);
 
     const swiper = new Swiper('.swiper-why-we', {
         loop: true,
 
         pagination: {
-            el: '.swiper-pagination',
+            el: '.pagination-why-we',
+            clickable: true
         },
 
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-next-why-we',
+            prevEl: '.swiper-prev-why-we',
         },
         centerSlides: true,
         breakpoints: {
@@ -33,7 +32,8 @@ const Swiperr = () => {
         loop: true,
 
         pagination: {
-            el: '.swiper-pagination',
+            el: '.pagination-clients',
+            clickable: true
         },
 
         navigation: {

@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:dev": "env NODE_ENV=development webpack --config  webpack.config.js",
-    "build:prod": "env NODE_ENV=production webpack --config  webpack.config.js",
-    "dev": "env NODE_ENV=development webpack serve --mode development --env development webpack --config webpack.config.js"
+    "build:dev": "cross-env NODE_ENV=development webpack --config  webpack.config.js",
+    "build:prod": "cross-env NODE_ENV=production webpack --config  webpack.config.js",
+    "dev": "cross-env NODE_ENV=development webpack serve --mode development --env development webpack --config webpack.config.js"
   },
   "author": "",
   "license": "ISC",

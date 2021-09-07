@@ -23,7 +23,7 @@
 }   
 
 .swiper-button-prev {
-    left: 20px !important;
+    left: 10px !important;
     &::after {
         background-image: url('../img/arrow.svg');
     }
@@ -53,15 +53,8 @@
     background: #545454 !important;
 }
 
-.swiper-clients {
-    padding-bottom: 90px;
-}
-
-.pagination-clients {
-    text-align: left;
-    position: absolute !important;
-    bottom: 0px !important;
-    left: 50px !important;
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 2px;
 }
 
 @media (min-width: 768px) {
@@ -71,6 +64,10 @@
 }
 
 @media (min-width: 1025px) {
+    .swiper-clients {
+        padding-bottom: 90px;
+    }
+
     .swiper-clients {
         padding-bottom: 90px;
     }
@@ -98,5 +95,16 @@
 
     .swiper-button-next {
         left: 530px !important;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 4px;
+    }
+
+    .pagination-clients {
+        text-align: left;
+        position: absolute !important;
+        bottom: 0px !important;
+        left: 50px !important;
     }
 }
