@@ -42,6 +42,32 @@ const Swiperr = () => {
         },
         centerSlides: true,
     })
+
+    const swiperThree = new Swiper('.swiper-about', {
+        loop: true,
+        pagination: {
+            el: '.pagination-about',
+            clickable: true
+        },
+        navigation: {
+            nextEl: '.swiper-prev-about',
+            prevEl: '.swiper-next-about'
+        },
+        // centeredSlides: true,
+        breakpoints: {
+            320: {
+                slidesPerView: 2
+            },
+            768: {
+                slidesPerView: 4
+            },
+            1025: {
+                slidesPerView: 6,
+                pagination: false,
+                navigation: false
+            }
+        }
+    })
 }
 
 export default Swiperr

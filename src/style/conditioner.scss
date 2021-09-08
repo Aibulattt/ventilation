@@ -5,11 +5,19 @@
     background-size: cover;
 }
 
+@media (min-width: 768px) {
+    .hero-conditioner {
+        background-image: url('../img/bg-hero-cond-tab.png');
+        background-size: 100% 100%;
+    }
+}
+
 
 
 
 @media (min-width: 1025px) {
     .hero-conditioner {
         background-image: url('../img/bg-hero-cond-desc.png');
+        background-size: 100% 140%;
     }
 }
