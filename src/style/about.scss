@@ -79,6 +79,39 @@
     letter-spacing: -1px;
 }
 
+.ymaps-2-1-79-copyright {
+    margin-left: 0 !important;
+    margin-right: 26px !important;
+}
+
+.map {
+    padding: 50px 0;
+}
+
+.ymaps-2-1-79-map ymaps, .ymaps-2-1-79-map ymaps:after, .ymaps-2-1-79-map ymaps:before {
+    border-radius: 48px;
+}
+
+.ymaps-2-1-79-controls__control_toolbar, .ymaps-2-1-79-gototaxi, .ymaps-2-1-79-gotoymaps {
+    display: none !important;
+}
+
+.map__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#map {
+    width: 100% !important;
+    height: 300px !important;
+}
+
+@media (min-width: 768px) {
+    #map {
+        height: 443px !important;
+    }
+}
+
 @media (min-width: 1025px) {
     .about__wrapper {
         flex-flow: row nowrap;
@@ -95,5 +128,9 @@
 
     .swiper-next-about, .swiper-prev-about {
         display: none;
+    }
+
+    #map {
+        min-height: 602px !important;
     }
 }
