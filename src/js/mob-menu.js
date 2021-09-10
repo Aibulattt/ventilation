@@ -2,16 +2,17 @@
 
 
 const MobMenu = () => {
-    console.log('jhello');
     const burgerBtn = document.querySelector('.js-btn-open-menu')
-    const headerMenu = document.querySelector('.js-header-menu')
+    const headerMenu = document.querySelector('.header__menu')
 
     burgerBtn.addEventListener('click', () => {
-        console.log('click');
-        headerMenu.classList.toggle('mobile-menu')
+        burgerBtn.classList.toggle('active')
+        headerMenu.classList.toggle('active')
+        document.body.classList.toggle('lock')
     })
     
 }
+
 export default MobMenu
 
 

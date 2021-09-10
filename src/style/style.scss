@@ -12,6 +12,7 @@
 @import './clients.scss';
 @import './conditioner.scss';
 @import './about.scss';
+@import './feedback.scss';
 
 @import './normalize.css';
 
@@ -54,6 +55,10 @@ h2 {
     max-width: 768px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.lock {
+    overflow: hidden;
 }
 
 .address-tel {

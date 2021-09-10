@@ -1,8 +1,10 @@
-const Map = () => {
+'use strict'
+
+document.addEventListener('DOMContentLoaded', () => {
     ymaps.ready(init);
     function init(){
         // Создание карты.
-        var myMap = new ymaps.Map("map", {
+        const myMap = new ymaps.Map("map", {
             // Координаты центра карты.
             // Порядок по умолчанию: «широта, долгота».
             // Чтобы не определять координаты центра карты вручную,
@@ -13,7 +15,7 @@ const Map = () => {
             zoom: 11
         })
 
-        var myPlacemark = new ymaps.GeoObject({
+        const myPlacemark = new ymaps.GeoObject({
             geometry: {
                 type: "Point",
                 coordinates: [55.18, 61.38]
@@ -22,7 +24,5 @@ const Map = () => {
     
         myMap.geoObjects.add(myPlacemark);
     }
+})
     
-}
-
-export default Map
