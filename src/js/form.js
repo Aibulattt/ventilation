@@ -6,6 +6,7 @@ const Form = () => {
     const modal = document.querySelector('.js-feedback')
     const btnClose = document.querySelector('.js-btn-close')
     const overlay = document.querySelector('.overlay')
+    const formSended = document.querySelector('.feedback__sended')
 
     btnOpen.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -29,12 +30,15 @@ const Form = () => {
 
     form.addEventListener('submit', async (ev) => {
         ev.preventDefault()
-        const formData = new FormData(form)
 
-        // const fetched = await fetch('mail.php', {
-        //     method: 'POST',
-        //     body: formData
-        // })
+        formSended.classList.add('active')
+
+        const fetched = await fetch('mail.php', {
+            method: 'POST',
+            body: new FormData(form)
+        })
+        console.log(fetched);   
+        form.reset()
     })
 }
 

@@ -110,10 +110,25 @@
 @media (min-width: 1025px) {
     .stages__list-item {
         max-width: 120px !important;
+        position: relative;
+        
+        &:not(:last-child) {
+            &::before {
+                display: block;
+                content: '';
+                width: 55px;
+                max-width: 55px;
+                height: 2px;
+                position: absolute;
+                top: 110px;
+                left: 110%;
+                background: #28D2E9;;
+            }
+        }
     }
 
     .stages {
-        padding-bottom: 199px;
+        padding-bottom: 155px;
         background: unset;
     }
 }

@@ -52,9 +52,9 @@ h2 {
 }
 
 .container {
-    max-width: 768px;
+    max-width: 728px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 .lock {
@@ -130,14 +130,21 @@ h2 {
 
 @media (min-width: 1025px) {
     .container {
-        max-width: 1920px !important;
-        padding: 0 375px !important;
+        max-width: 1170px !important;
+        padding: 0 20px !important;
+    }
+
+    .title-line {
+    
+        &::before {
+          height: 27px;
+        }
     }
 }
 
 @media (min-width: 768px) {
     .container {
-        max-width: 1024px;
-        padding: 0 45px;
+        max-width: 932px;
+        padding: 0 20px;
     }
 }

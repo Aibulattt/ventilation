@@ -8,7 +8,7 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" /> 
     <link rel="stylesheet" href="./main.css">
     <script src="./js/main.js" defer></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
     <script src="./js/map.js" defer></script>
     <title>Вентиляции</title>
 </head>
@@ -39,7 +39,7 @@
                                 </a>
                             </li>
                             <li class="header__nav-item">
-                                <a class="header__nav-link" href="#">
+                                <a class="header__nav-link" href="#clients">
                                     НАШИ РАБОТЫ
                                 </a>
                             </li>
@@ -238,7 +238,7 @@
                     <p class="object__list-desc">Частные дома</p>
                 </li>
             </ul>
-            <button class="object__btn btn">Рассчитать стоимость</button>
+            <button class="object__btn btn js-btn-open-form">Рассчитать стоимость</button>
         </div>
     </section>
 
@@ -296,7 +296,7 @@
                     <div class="swiper-button-next swiper-next-why-we"></div>
                 </div>
 
-                <button class="why-we__btn btn">Отправить заявку</button>
+                <button class="why-we__btn btn js-btn-open-form">Отправить заявку</button>
 
 
             </div>
@@ -341,12 +341,12 @@
                             <p class="stages__list-desc">Проведение пуско-наладочных работ и тестирование системы</p>
                         </li>
                     </ul>
-                    <button class="stages__btn btn">Отправить заявку</button>
+                    <button class="stages__btn btn js-btn-open-form">Отправить заявку</button>
                 </div>
             </div>
         </div>
 
-        <div class="clients">
+        <div class="clients" id="clients">
             <div class="container">
                 <div class="clients__wrapper">
                     <h2 class="clients__title sectiom-title title-line">КЛИЕНТЫ</h2>
@@ -854,12 +854,16 @@
                             </div>
 
                         </div>
-                        <div class="swiper-pagination pagination-clients"></div>
+                        <div class="clients__bottom-control">
+                            <div class="clients__swiper-control">
+                                <div class="swiper-pagination pagination-clients"></div>
+                                <div class="swiper-button-prev swiper-prev-clients"></div>
+                                <div class="swiper-button-next swiper-next-clients"></div>
+                            </div>
 
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                            <button class="clients__btn btn js-btn-open-form">ЗАПРОСИТЬ СТОИМОСТЬ</button>
+                        </div>
                     </div>
-                    <button class="clients__btn btn">ЗАПРОСИТЬ СТОИМОСТЬ</button>
                 </div>
             </div>
         </div>
@@ -906,7 +910,7 @@
                                 <a class="footer__address-tel address-tel" href="tel:+73512451717">+7 351 245 17 17</a>
                             </li>
                             <li class="footer__address-item-btn">
-                                <button class="footer__callback-btn">ОБРАТНЫЙ ЗВОНОК</button>
+                                <button class="footer__callback-btn js-btn-open-form">ОБРАТНЫЙ ЗВОНОК</button>
                             </li>
                             <li class="footer__address-item">
                                 <a class="footer__address-mail address-mail"

@@ -79,6 +79,10 @@
     letter-spacing: -1px;
 }
 
+.map__wrapper {
+    border-radius: 48px;
+}
+
 .ymaps-2-1-79-copyright {
     margin-left: 0 !important;
     margin-right: 26px !important;
@@ -104,6 +108,8 @@
 #map {
     width: 100% !important;
     height: 300px !important;
+    border-radius: 48px;
+    overflow-x: hidden;
 }
 
 @media (min-width: 768px) {
