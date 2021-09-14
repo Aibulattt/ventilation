@@ -4,13 +4,13 @@
 }
 
 .wwd__desc {
-    text-indent: 30px;
+    text-indent: 16px;
 }
 
 .wwd-text {
     font-weight: bold;
-    font-size: 12px;
-    line-height: 17px;
+    font-size: 11px;
+    line-height: 14px;
     color: #6F6C6C;
 }
 
@@ -20,7 +20,7 @@
 
 @media (min-width: 768px) {
     .wwd-text {
-        font-size: 16px;
+        font-size: 15px;
         line-height: 18px;
     }
 }
@@ -31,12 +31,16 @@
         padding: 60px 0;
     }
 
+    .wwd__desc {
+        text-indent: 40px;
+    }
+
     .wwd-text {
-        font-size: 21px;
+        font-size: 17px;
         line-height: 28px;
     }
 
-    .wwd__list-desc {
-        margin: 15px 0;
-    }
+    // .wwd__list-desc {
+    //     margin: 15px 0;
+    // }
 }
