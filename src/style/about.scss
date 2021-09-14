@@ -1,5 +1,18 @@
 .about {
     padding-top: 40px;  
+
+    .title-line::before {
+        left: 80px !important;
+        background-color: #DEDEDE !important;
+    }
+
+    .wwd-text {
+        text-indent: 30px !important;
+    }
+
+    .wwd__desc {
+        margin: 0;
+    }
 }
 
 .team__title {
@@ -7,11 +20,12 @@
     font-size: 24px;
     line-height: 28px;
     text-align: center;
-    color: #000000;
+    color: #000;
 }
 
 .swiper-about {
     margin-top: 37px;
+    overflow-x: hidden;
 }
 
 .swiper-slide-team {
@@ -59,7 +73,7 @@
     height: 132px;
     // max-width: 50%;
     background: #DEDEDE;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+    // box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
     border-radius: 15px;
 }
 
@@ -119,9 +133,32 @@
 }
 
 @media (min-width: 1025px) {
+    .about {
+        padding-top: 40px;  
+    
+        .title-line::before {
+            left: 210px !important;
+        }
+
+        .wwd-text {
+            font-size: 17px !important;
+            line-height: 25px !important;
+        }
+    }
+
+    .team {
+        margin-top: 30px;
+    }
+
+    .team__title {
+        text-align: left;
+    }
+
     .about__wrapper {
         flex-flow: row nowrap;
         align-items: flex-start;
+        padding-bottom: 65px;
+        border-bottom: 1px solid #28D2E9;
     }
 
     .about .what-we-do {

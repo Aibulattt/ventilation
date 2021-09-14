@@ -62,7 +62,7 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 18px;
-    box-shadow: unset;
+    box-shadow: unset !important;
 }
 
 @media (min-width: 768px) {
@@ -88,7 +88,7 @@
     }
 
     .clients {
-        padding-bottom: 50px !important;
+        padding-bottom: 20px !important;
         background-image: url('../img/bg-clientsss.png');
         background-repeat: no-repeat;
     }

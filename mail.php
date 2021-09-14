@@ -36,9 +36,9 @@ try {
     echo 'yooo';
 
     //Recipients
-    $mail->setFrom('aibulat.urazov@gmail.com');
-    $mail->addAddress('aibulat.urazov@gmail.com');     //Add a recipient          
-    $mail->addReplyTo('aibulat.urazov@gmail.com', 'Information');
+    $mail->setFrom('7512849@gmail.com');
+    $mail->addAddress('7512849@gmail.com');     //Add a recipient          
+    $mail->addReplyTo('7512849@gmail.com', 'Information');
     // $mail->addCC('cc@example.com');
     // $mail->addBCC('bcc@example.com');
 

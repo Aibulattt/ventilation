@@ -7,6 +7,7 @@ const Form = () => {
     const btnClose = document.querySelector('.js-btn-close')
     const overlay = document.querySelector('.overlay')
     const formSended = document.querySelector('.feedback__sended')
+    const btnCloseSend = document.querySelector('.js-btn-close-send')
 
     btnOpen.forEach(btn => {
         btn.addEventListener('click', () => {
@@ -32,6 +33,10 @@ const Form = () => {
         ev.preventDefault()
 
         formSended.classList.add('active')
+        console.log(btnCloseSend);
+        btnCloseSend.addEventListener('click', () => {
+            formSended.classList.remove('active')
+        })
 
         const fetched = await fetch('mail.php', {
             method: 'POST',
