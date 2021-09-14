@@ -1,10 +1,6 @@
 .object {
     padding-bottom: 45px;
     background: #fff;
-}
-
-.object__title {
-    
 
     .title-line {
         &::before {
@@ -12,6 +8,7 @@
         }
     }
 }
+
 
 .object__list {
     display: flex;

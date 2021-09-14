@@ -87,4 +87,10 @@
         font-size: 18px;
         line-height: 22px;
     }
+
+    .why-we {
+        .title-line::before {
+            left: 632px !important;
+        }
+    }
 }

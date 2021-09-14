@@ -140,6 +140,16 @@ h2 {
           height: 27px;
         }
     }
+
+    .section-title {
+        font-size: 96px;
+        line-height: 117px;
+    }
+
+    .title-line::before {
+        left: 468px;
+        top: 50px;
+    }
 }
 
 @media (min-width: 768px) {

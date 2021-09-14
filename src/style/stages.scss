@@ -130,5 +130,9 @@
     .stages {
         padding-bottom: 155px;
         background: unset;
+
+        .title-line::before {
+            left: 345px;
+        }
     }
 }
