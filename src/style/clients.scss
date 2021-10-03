@@ -87,6 +87,11 @@
         background-size: 100% 50%;
     }
 
+    .font {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
     .clients {
         padding-bottom: 20px !important;
         background-image: url('../img/bg-clientsss.png');
@@ -115,6 +120,10 @@
         margin-left: 50px;
     }
 
+    .clients__slide-list {
+        max-width: 674  px;
+    }
+
     .clients__slide-title {
         font-size: 24px !important;
         line-height: 29px !important;
@@ -128,6 +137,11 @@
     .clients__slide-list-desc, .clients__slide-desc {
         font-size: 16px !important;
         line-height: 21px !important;
+    }
+
+    .clients-margin {
+        margin-top: 20px;
+        text-indent: 20px;
     }
 
     .clients__slide-list-desc, .clients__slide-desc, .clients__slide-timing, .clients__slide-title {

@@ -136,11 +136,24 @@
 }
 
 .header__nav-link {
+    padding-bottom: 10px;
     font-weight: 900;
     font-size: 18px;
     line-height: 22px;
     text-transform: uppercase;
     color: #FFFFFF;
+
+    &:hover {
+        border-bottom: 2px solid #28d2e9;
+        color: #28d2e9;
+        transition: all .2s ease-in-out;
+    }
+}
+
+.header__nav-link.active {
+    border-bottom: 2px solid #28d2e9;
+    color: #28d2e9;
+    transition: all .2s ease-in-out;
 }
 
 .header__callback-address {
